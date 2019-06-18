@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "@material-ui/core": "4.1.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-ga": "2.5.7",
+    "react-icons": "3.7.0",
+    "react-scripts": "3.0.1",
+    "react-smart-sections": "0.0.2",
+    "smart-sections": "0.0.6"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-react": "1.1.7",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node ./postbuild.js && rimraf ./build/**/*.map",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

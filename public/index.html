@@ -2,37 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#3085ad" />
+    <meta name="description" content="This is the personal web site of Matthias von Deetzen. A passinate creator for the web. A Developer, Administrator and Architect." />
+    <meta name="mobile-web-app-capable" content="yes">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Matthias von Deetzen | Skills, experience and interests</title>
+
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/static/icons/apple_touch_icon_120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/static/icons/apple_touch_icon_152.png" />
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/static/icons/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preload" href="%PUBLIC_URL%/static/fonts/Open_Sans-300-latin7.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="%PUBLIC_URL%/static/fonts/Open_Sans-400-latin14.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="%PUBLIC_URL%/static/fonts/Open_Sans-600-latin21.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="%PUBLIC_URL%/static/fonts/Kodchasan-400-latin4.woff2" as="font" crossorigin="anonymous" />
+
+    <style>
+      @font-face {
+        font-family: 'Kodchasan';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Kodchasan Regular'), local('Kodchasan-Regular'), url('/static/fonts/Kodchasan-400-latin4.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local('Open Sans Light'), local('OpenSans-Light'), url('/static/fonts/Open_Sans-300-latin7.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'), url('/static/fonts/Open_Sans-400-latin14.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('/static/fonts/Open_Sans-600-latin21.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+
+    <style>
+      body {
+        background-image:
+          linear-gradient(
+            160deg,
+            rgba(116, 168, 188, 0.2) 0%,
+            rgba(54, 123, 150, 0.4) 37%,
+            rgba(107, 171, 196, 0.3) 74%
+          );
+        background-attachment: fixed;
+        height: 100vh;
+      }
+      #mvd {
+        width: 100%;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="mvd"></div>
   </body>
 </html>

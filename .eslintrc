@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "settings": {
+    "ecmascript": 6,
+    "jsx": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  }
+}
