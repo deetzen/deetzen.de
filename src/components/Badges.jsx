@@ -7,6 +7,11 @@ import {
   Link,
 } from '@material-ui/core';
 
+import badgePageSpeed from '../images/badges/page_speed.svg';
+import badgeSslLabs from '../images/badges/ssl_labs.svg';
+import badgeGtMetrix from '../images/badges/gt_metrix.svg';
+import badgeObservatory from '../images/badges/observatory.svg';
+
 const useStyles = makeStyles({
   badgeList: {
     margin: '1em 0 2em',
@@ -19,19 +24,19 @@ const useStyles = makeStyles({
 
 const badges = [{
   link: 'https://developers.google.com/speed/pagespeed/insights/?hl=de&url=https%3A%2F%2Fvon.deetzen.de',
-  url: '/static/badges/page_speed.svg',
+  url: badgePageSpeed,
   alt: 'Google PageSpeed Insights',
 }, {
   link: 'https://www.ssllabs.com/ssltest/analyze.html?d=von.deetzen.de',
-  url: '/static/badges/ssl_labs.svg',
+  url: badgeSslLabs,
   alt: 'SSL Labs',
 }, {
   link: 'https://gtmetrix.com/reports/von.deetzen.de/ny9wiK0w',
-  url: '/static/badges/gt_metrix.svg',
+  url: badgeGtMetrix,
   alt: 'GTMetrix',
 }, {
   link: 'https://observatory.mozilla.org/analyze/von.deetzen.de',
-  url: '/static/badges/observatory.svg',
+  url: badgeObservatory,
   alt: 'Mozilla Observatory',
 }];
 

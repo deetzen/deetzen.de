@@ -21,6 +21,12 @@ import {
 
 import { getAge } from '../tools';
 
+import photoPngSmall from '../images/photo_small.png';
+import photoWebpSmall from '../images/photo_small.webp';
+
+import photoPng from '../images/photo.png';
+import photoWebp from '../images/photo.webp';
+
 const useStyle = makeStyles(theme => ({
   profile: {
     margin: '12em 0 0',
@@ -121,13 +127,13 @@ const Profile = () => {
         <Card raised={false} className={classes[(isSm ? 'profileMobile' : 'profile')]}>
           {isSm ? (
             <picture className={classes.profileCoverMobile}>
-              <source type="image/webp" srcSet="static/images/photo_small.webp" />
-              <img src="static/images/photo_small.png" alt="Matthias von Deetzen" width="100%" />
+              <source type="image/webp" srcSet={photoWebpSmall} />
+              <img src={photoPngSmall} alt="Matthias von Deetzen" width="100%" />
             </picture>
           ) : (
             <picture className={classes.profileCover}>
-              <source type="image/webp" srcSet="static/images/photo.webp" />
-              <img src="static/images/photo.png" alt="Matthias von Deetzen" width="200" height="280" />
+              <source type="image/webp" srcSet={photoWebp} />
+              <img src={photoPng} alt="Matthias von Deetzen" width="200" height="280" />
             </picture>
           )}
           <CardContent className={classes.profileContent}>

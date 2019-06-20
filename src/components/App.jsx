@@ -36,12 +36,12 @@ function App() {
       <CssBaseline />
       <AppBar />
       <Section name="profile">
-        <Zoom timeout={650} in>
+        <Zoom timeout={350} in>
           <div>
             <Profile />
           </div>
         </Zoom>
-        <Slide timeout={650} direction="up" in>
+        <Slide timeout={350} direction="up" in>
           <div>
             <Intro />
           </div>
