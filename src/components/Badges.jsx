@@ -11,6 +11,7 @@ import badgePageSpeed from '../images/badges/page_speed.svg';
 import badgeSslLabs from '../images/badges/ssl_labs.svg';
 import badgeGtMetrix from '../images/badges/gt_metrix.svg';
 import badgeObservatory from '../images/badges/observatory.svg';
+import badgeHeaders from '../images/badges/headers.svg';
 
 const useStyles = makeStyles({
   badgeList: {
@@ -38,6 +39,10 @@ const badges = [{
   link: 'https://observatory.mozilla.org/analyze/von.deetzen.de',
   url: badgeObservatory,
   alt: 'Mozilla Observatory',
+}, {
+  link: 'https://securityheaders.com/?q=https%3A%2F%2Fvon.deetzen.de&followRedirects=on',
+  url: badgeHeaders,
+  alt: 'Security Headers',
 }];
 
 const Badges = () => {
