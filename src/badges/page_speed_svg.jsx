@@ -41,14 +41,13 @@ const SvgPageSpeed = props => (
         textLength={230}
         transform="scale(.1)"
       >
-        {"~95"}
+        {"~96"}
       </text>
       <text x={865} y={140} textLength={230} transform="scale(.1)">
-        {"~95"}
+        {"~96"}
       </text>
     </g>
   </svg>
 );
 
 export default SvgPageSpeed;
-
