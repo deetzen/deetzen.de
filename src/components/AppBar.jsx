@@ -131,6 +131,7 @@ const MyAppBar = () => {
               mobile ? classes.mobileButton : '',
               section.active ? classes.navItemActive : classes.navItem,
             ].join(' ')}
+            ariaLabel={section.name}
           >
             {section.name}
           </Button>
