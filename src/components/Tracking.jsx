@@ -18,6 +18,10 @@ import {
 } from '@material-ui/core';
 
 import {
+  makeStyles,
+} from '@material-ui/core/styles';
+
+import {
   green,
   red,
 } from '@material-ui/core/colors';
@@ -34,10 +38,22 @@ const activateTracking = () => {
   ReactGA.pageview(window.location.pathname + window.location.search);
 };
 
+const useStyles = makeStyles(theme => ({
+  link: {
+    color: theme.palette.primary.main,
+    '&:hover': {
+      textDecoration: 'underline',
+      cursor: 'pointer',
+    },
+  },
+}));
+
 const Tracking = () => {
   const allowCookies = localStorage.getItem('allowCookies');
   const [allow, setAllow] = useState(allowCookies);
   const [dialogOpen, setDialogOpen] = useState(false);
+
+  const classes = useStyles();
 
   useEffect(() => {
     if (allow === 'true') {
@@ -67,7 +83,14 @@ const Tracking = () => {
             <span id="client-snackbar">
               Do you allow me to save cookies?
               <br />
-              <Button variant="text" style={{ padding: 0, textTransform: 'inherit' }} color="primary" onClick={() => setDialogOpen(true)}>More Information</Button>
+              <div
+                role="presentation"
+                className={classes.link}
+                style={{ padding: 0, textTransform: 'inherit' }}
+                onClick={() => setDialogOpen(true)}
+              >
+                More Information
+              </div>
             </span>
           )}
           action={[
@@ -98,7 +121,7 @@ const Tracking = () => {
             <br />
             <br />
             <i>
-              If you allow me to track your visit, Google saves some cookies on you computer
+              If you allow me to track your visit, Google saves some cookies on your computer
               to recognize your browser.
             </i>
             <br />
