@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgObservatory = props => (
   <svg width="1em" height="1em" {...props}>
@@ -28,10 +28,10 @@ const SvgObservatory = props => (
         textLength={670}
         transform="scale(.1)"
       >
-        {"Observatory"}
+        Observatory
       </text>
       <text x={395} y={140} textLength={670} transform="scale(.1)">
-        {"Observatory"}
+        Observatory
       </text>
       <text
         x={895}
@@ -41,14 +41,13 @@ const SvgObservatory = props => (
         textLength={170}
         transform="scale(.1)"
       >
-        {"A+"}
+        A+
       </text>
       <text x={895} y={140} textLength={170} transform="scale(.1)">
-        {"A+"}
+        A+
       </text>
     </g>
   </svg>
 );
 
 export default SvgObservatory;
-

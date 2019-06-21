@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgGtMetrix = props => (
   <svg width="1em" height="1em" {...props}>
@@ -28,10 +28,10 @@ const SvgGtMetrix = props => (
         textLength={490}
         transform="scale(.1)"
       >
-        {"GTMetrix"}
+        GTMetrix
       </text>
       <text x={305} y={140} textLength={490} transform="scale(.1)">
-        {"GTMetrix"}
+        GTMetrix
       </text>
       <text
         x={795}
@@ -41,14 +41,13 @@ const SvgGtMetrix = props => (
         textLength={330}
         transform="scale(.1)"
       >
-        {"100%"}
+        100%
       </text>
       <text x={795} y={140} textLength={330} transform="scale(.1)">
-        {"100%"}
+        100%
       </text>
     </g>
   </svg>
 );
 
 export default SvgGtMetrix;
-

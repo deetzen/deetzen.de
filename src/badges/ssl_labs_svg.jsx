@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgSslLabs = props => (
   <svg width="1em" height="1em" {...props}>
@@ -28,10 +28,10 @@ const SvgSslLabs = props => (
         textLength={510}
         transform="scale(.1)"
       >
-        {"SSL Labs"}
+        SSL Labs
       </text>
       <text x={315} y={140} textLength={510} transform="scale(.1)">
-        {"SSL Labs"}
+        SSL Labs
       </text>
       <text
         x={735}
@@ -41,14 +41,13 @@ const SvgSslLabs = props => (
         textLength={170}
         transform="scale(.1)"
       >
-        {"A+"}
+        A+
       </text>
       <text x={735} y={140} textLength={170} transform="scale(.1)">
-        {"A+"}
+        A+
       </text>
     </g>
   </svg>
 );
 
 export default SvgSslLabs;
-

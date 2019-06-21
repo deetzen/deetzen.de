@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgHeaders = props => (
   <svg width="1em" height="1em" {...props}>
@@ -28,10 +28,10 @@ const SvgHeaders = props => (
         textLength={450}
         transform="scale(.1)"
       >
-        {"Headers"}
+        Headers
       </text>
       <text x={285} y={140} textLength={450} transform="scale(.1)">
-        {"Headers"}
+        Headers
       </text>
       <text
         x={675}
@@ -41,14 +41,13 @@ const SvgHeaders = props => (
         textLength={170}
         transform="scale(.1)"
       >
-        {"A+"}
+        A+
       </text>
       <text x={675} y={140} textLength={170} transform="scale(.1)">
-        {"A+"}
+        A+
       </text>
     </g>
   </svg>
 );
 
 export default SvgHeaders;
-

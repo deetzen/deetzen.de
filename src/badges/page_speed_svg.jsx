@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgPageSpeed = props => (
   <svg width="1em" height="1em" {...props}>
@@ -28,10 +28,10 @@ const SvgPageSpeed = props => (
         textLength={610}
         transform="scale(.1)"
       >
-        {"PageSpeed"}
+        PageSpeed
       </text>
       <text x={365} y={140} textLength={610} transform="scale(.1)">
-        {"PageSpeed"}
+        PageSpeed
       </text>
       <text
         x={865}
@@ -41,10 +41,10 @@ const SvgPageSpeed = props => (
         textLength={230}
         transform="scale(.1)"
       >
-        {"~98"}
+        ~98
       </text>
       <text x={865} y={140} textLength={230} transform="scale(.1)">
-        {"~98"}
+        ~98
       </text>
     </g>
   </svg>
