@@ -14,11 +14,13 @@ import {
   Slide,
   Snackbar,
   SnackbarContent,
-  Zoom,
+  Typography,
+  useMediaQuery,
 } from '@material-ui/core';
 
 import {
   makeStyles,
+  useTheme,
 } from '@material-ui/core/styles';
 
 import {
@@ -28,6 +30,7 @@ import {
 
 import {
   MdDone as AcceptIcon,
+  MdClose as CloseIcon,
   MdClose as DeclineIcon,
 } from 'react-icons/md';
 
@@ -39,6 +42,12 @@ const activateTracking = () => {
 };
 
 const useStyles = makeStyles(theme => ({
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: theme.palette.grey[500],
+  },
   link: {
     color: theme.palette.primary.main,
     '&:hover': {
@@ -53,7 +62,9 @@ const Tracking = () => {
   const [allow, setAllow] = useState(allowCookies);
   const [dialogOpen, setDialogOpen] = useState(false);
 
+  const theme = useTheme();
   const classes = useStyles();
+  const fullScreenDialog = useMediaQuery(theme.breakpoints.down('xs'));
 
   useEffect(() => {
     if (allow === 'true') {
@@ -73,12 +84,11 @@ const Tracking = () => {
         open={(allow === 'null' || allow === null)}
         TransitionComponent={Slide}
         TransitionProps={{
-          direction: 'left',
+          direction: 'up',
         }}
         variant="success"
       >
         <SnackbarContent
-          aria-describedby="client-snackbar"
           message={(
             <span id="client-snackbar">
               Do you allow me to save cookies?
@@ -106,14 +116,22 @@ const Tracking = () => {
 
       <Dialog
         open={dialogOpen}
+        fullScreen={fullScreenDialog}
         onClose={() => setDialogOpen(false)}
-        TransitionComponent={Zoom}
+        TransitionComponent={Slide}
         TransitionProps={{
-          direction: 'left',
+          direction: 'down',
         }}
-        aria-labelledby="responsive-dialog-title"
+        style={{
+          zIndex: 1400,
+        }}
       >
-        <DialogTitle id="responsive-dialog-title">Why I use cookies</DialogTitle>
+        <DialogTitle disableTypography>
+          <Typography variant="h6">Why I use cookies</Typography>
+          <IconButton aria-label="Close" className={classes.closeButton} onClick={() => setDialogOpen(false)}>
+            <CloseIcon />
+          </IconButton>
+        </DialogTitle>
         <DialogContent>
           <DialogContentText>
             To keep track of my visitors and their behavior on my site I use Google Analytics. I
@@ -122,12 +140,12 @@ const Tracking = () => {
             <br />
             <i>
               If you allow me to track your visit, Google saves some cookies on your computer
-              to recognize your browser.
+              to recognize your behavior.
             </i>
             <br />
             <br />
             You can get more information in the&nbsp;
-            <Link target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">
+            <Link target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage#analyticsjs">
               docs by Google
             </Link>
             .
