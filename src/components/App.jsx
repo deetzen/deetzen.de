@@ -27,6 +27,7 @@ import Skills from './Skills';
 import Work from './Work';
 import Interests from './Interests';
 import Badges from './Badges';
+import Tracking from './Tracking';
 
 function App() {
   const theme = useTheme();
@@ -70,6 +71,7 @@ function App() {
         </Grid>
       </Grid>
       <Badges />
+      <Tracking />
     </MuiThemeProvider>
   );
 }
