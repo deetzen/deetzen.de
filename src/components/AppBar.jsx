@@ -131,7 +131,7 @@ const MyAppBar = () => {
               mobile ? classes.mobileButton : '',
               section.active ? classes.navItemActive : classes.navItem,
             ].join(' ')}
-            ariaLabel={section.name}
+            aria-label={section.name.charAt(0).toUpperCase() + section.name.slice(1)}
           >
             {section.name}
           </Button>
@@ -157,6 +157,7 @@ const MyAppBar = () => {
             <IconButton
               onClick={() => setMenuOpen(!menuOpen)}
               color="inherit"
+              aria-label={`${menuOpen ? 'Close' : 'Open'} menu`}
               className={classes.menuIconWrapper}
               disableRipple
               disableFocusRipple
