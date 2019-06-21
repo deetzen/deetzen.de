@@ -133,7 +133,7 @@ const Profile = () => {
           ) : (
             <picture className={classes.profileCover}>
               <source type="image/webp" srcSet={photoWebp} />
-              <img src={photoPng} alt="Matthias von Deetzen" width="200" height="280" />
+              <img src={photoPng} alt="Matthias von Deetzen" width="200" height="270" />
             </picture>
           )}
           <CardContent className={classes.profileContent}>
