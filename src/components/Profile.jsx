@@ -32,7 +32,7 @@ const useStyle = makeStyles(theme => ({
     margin: '12em 0 0',
   },
   profileMobile: {
-    margin: '5em 0 0',
+    margin: '4.5em 0 0',
   },
   profileBalloon: {
     position: 'relative',

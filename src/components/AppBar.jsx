@@ -45,7 +45,10 @@ const useStyles = makeStyles(theme => ({
   },
   appbar: {
     padding: '0.5em 1.2em',
-    minHeight: '5em',
+    minHeight: '4.5em',
+  },
+  toolbar: {
+    minHeight: 'auto',
   },
   title: {
     flexGrow: 1,
@@ -65,14 +68,15 @@ const useStyles = makeStyles(theme => ({
   },
   mobileButton: {
     width: '100%',
-    padding: '0 0 1em',
+    margin: '0 0 1em',
+    lineHeight: '1.5em',
   },
   navItem: {
     color: theme.palette.text.primary,
   },
   navItemActive: {
     color: theme.palette.text.primary,
-    textDecoration: 'underline',
+    textDecoration: 'underline !important',
   },
 }));
 
@@ -127,6 +131,7 @@ const MyAppBar = () => {
           <Button
             key={section.name}
             onClick={() => scrollTo(section.yScrollPoint, 500)}
+            disableFocusRipple
             className={[
               mobile ? classes.mobileButton : '',
               section.active ? classes.navItemActive : classes.navItem,
@@ -143,7 +148,7 @@ const MyAppBar = () => {
   return (
     <ElevationScroll>
       <AppBar color="default" className={classes.appbar}>
-        <Toolbar>
+        <Toolbar className={classes.toolbar}>
           <Typography
             variant="h6"
             className={classes.title}
