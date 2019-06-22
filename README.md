@@ -7,4 +7,3 @@
 [![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m782955330-d04fb940f8666fe470fe5561.svg)](https://von.deetzen.de)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deetzen/deetzen.de.svg)](https://github.com/deetzen/deetzen.de)
 [![GitHub](https://img.shields.io/github/license/deetzen/deetzen.de.svg)](https://github.com/deetzen/deetzen.de/LICENSE.md)
-[![MaterialUI version](https://img.shields.io/github/package-json/dependency-version/deetzen/deetzen.de/@material-ui/core.svg)](https://material-ui.com/)
