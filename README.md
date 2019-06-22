@@ -1,6 +1,10 @@
 # deetzen.de
 > A simple vita page for myself.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/0f14bc6ee4d9efb19295/maintainability)](https://codeclimate.com/github/deetzen/deetzen.de/maintainability)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f76b7d751b694019961a6fd74d45dc26)](https://www.codacy.com/app/deetzen/deetzen.de?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deetzen/deetzen.de&amp;utm_campaign=Badge_Grade)
-[![Project Dependencies](https://david-dm.org/deetzen/deetzen.de.svg)](https://david-dm.org/deetzen/deetzen.de)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/deetzen/deetzen.de.svg)](https://codeclimate.com/github/deetzen/deetzen.de/maintainability)
+[![Code Quality](https://img.shields.io/codacy/grade/f76b7d751b694019961a6fd74d45dc26.svg)](https://www.codacy.com/app/deetzen/deetzen.de?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deetzen/deetzen.de&amp;utm_campaign=Badge_Grade)
+[![Dependencies](https://img.shields.io/david/deetzen/deetzen.de.svg)](https://david-dm.org/deetzen/deetzen.de)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/deetzen/deetzen.de.svg)
+![GitHub](https://img.shields.io/github/license/deetzen/deetzen.de.svg)
+![MaterialUI version](https://img.shields.io/github/package-json/dependency-version/deetzen/deetzen.de/@material-ui/core.svg)
+![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m782955330-d04fb940f8666fe470fe5561.svg)
