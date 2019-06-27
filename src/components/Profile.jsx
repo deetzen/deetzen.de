@@ -29,7 +29,7 @@ import photoWebp from '../images/photo.webp';
 
 const useStyle = makeStyles(theme => ({
   profile: {
-    margin: '12em 0 0',
+    margin: '12em 0 2em',
   },
   profileMobile: {
     margin: '4.5em 0 0',

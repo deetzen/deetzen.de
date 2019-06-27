@@ -6,8 +6,6 @@ import {
   CssBaseline,
   Grid,
   IconButton,
-  Slide,
-  Zoom,
 } from '@material-ui/core';
 
 import {
@@ -37,16 +35,8 @@ function App() {
       <CssBaseline />
       <AppBar />
       <Section name="profile">
-        <Zoom timeout={350} in>
-          <div>
-            <Profile />
-          </div>
-        </Zoom>
-        <Slide timeout={350} direction="up" in>
-          <div>
-            <Intro />
-          </div>
-        </Slide>
+        <Profile />
+        <Intro />
       </Section>
       <Section name="skills">
         <Skills />

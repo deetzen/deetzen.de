@@ -49,7 +49,9 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.grey[500],
   },
   link: {
-    color: theme.palette.primary.main,
+    fontStyle: 'italic',
+    textDecoration: 'underline',
+    color: theme.palette.primary.contrastText,
     '&:hover': {
       textDecoration: 'underline',
       cursor: 'pointer',
@@ -82,10 +84,6 @@ const Tracking = () => {
           horizontal: 'right',
         }}
         open={(allow === 'null' || allow === null)}
-        TransitionComponent={Slide}
-        TransitionProps={{
-          direction: 'up',
-        }}
         variant="success"
       >
         <SnackbarContent
@@ -96,7 +94,6 @@ const Tracking = () => {
               <div
                 role="presentation"
                 className={classes.link}
-                style={{ padding: 0, textTransform: 'inherit' }}
                 onClick={() => setDialogOpen(true)}
               >
                 More Information
