@@ -22,8 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build && node ./postbuild.js && rimraf ./build/**/*.map",
     "now-build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "eslint --ext .js src"
   },
   "eslintConfig": {
     "extends": "react-app"
